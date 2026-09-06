@@ -1,9 +1,9 @@
 import streamlit as st
 from groq import Groq
 
-st.set_page_config(page_title="Groq Chatbot", page_icon="🤖", layout="centered")
+st.set_page_config(page_title="Jovelyn Chatbot", page_icon="🤖", layout="centered")
 
-st.title("🤖 Groq AI Chatbot")
+st.title("Jovelyn AI Chatbot")
 st.caption("Powered by Groq's free API + Streamlit")
 
 # ---------------------------------------------------
@@ -40,7 +40,7 @@ with st.sidebar:
     )
     system_prompt = st.text_area(
         "System prompt",
-        value="You are a helpful, friendly assistant.",
+        value="You are a helpful, friendly assistant named Jovelyn Sarona from ZDSPGC Tigbao campus.",
         height=100,
     )
     temperature = st.slider("Temperature", 0.0, 1.5, 0.7, 0.1)
